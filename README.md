@@ -6,31 +6,12 @@ Welcome to the **KTechCollege-Backend-BuiQuocThinh** repository. This repository
 ## Repository Structure
 The repository is organized into the following main directories:
 
-### `Exercises/`
-This directory contains a series of backend exercises designed to reinforce learning and practical application of backend concepts. Each exercise includes:
-- **Instructions**: Step-by-step guidance on what needs to be accomplished.
-- **Solution**: Implementations demonstrating the expected outcome.
-
-### `Slides/`
-This directory includes presentation slides used during lectures and workshops. The slides cover a wide range of topics related to backend development, such as:
-- Introduction to backend development
-- RESTful API design
-- Database integration
-- Security best practices
-- Error handling and logging
+The repository is organized as follows:
+- `Exercises/`: Contains the backend exercises with detailed instructions and solutions.
+- `Slides/`: Includes presentation slides used for teaching backend development concepts.
 
 ## Technologies Used
-The projects in this repository utilize the following technologies and tools:
-- **Java**: The primary programming language for all backend development.
-- **Spring Boot**: A framework for building Java-based web applications.
-- **Maven**: A build automation tool used for managing project dependencies.
-- **MySQL**: A relational database management system used for data storage.
-
-## Prerequisites
-Before you begin, ensure you have the following installed on your machine:
-- Java Development Kit (JDK) 11 or higher
-- Apache Maven
-- MySQL Server
+- **Java**: The primary programming language used for backend development in this repository.
 
 ## Setup Instructions
 To set up and run the projects in this repository, follow these steps:
@@ -45,19 +26,8 @@ To set up and run the projects in this repository, follow these steps:
    cd KTechCollege-Backend-BuiQuocThinh
    ```
 
-3. **Build the project using Maven**:
-   ```bash
-   mvn clean install
-   ```
+3. **Follow specific setup instructions provided in each exercise's README file**:
 
-4. **Run the application**:
-   Navigate to the specific exercise or project directory and run:
-   ```bash
-   mvn spring-boot:run
-   ```
-
-5. **Database setup**:
-   Ensure MySQL server is running and create a database for the projects. Update the `application.properties` file in each project with your database credentials.
 
 ## Contribution Guidelines
 Contributions to this repository are welcome. If you would like to contribute, please follow these steps:
