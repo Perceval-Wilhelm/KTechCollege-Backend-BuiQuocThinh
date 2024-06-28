@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/KTechCollege-Backend-BuiQuocThinh.iml" filepath="$PROJECT_DIR$/.idea/KTechCollege-Backend-BuiQuocThinh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercises/week1/day2/day2.iml" filepath="$PROJECT_DIR$/Exercises/week1/day2/day2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercises/week1/day4/day4.iml" filepath="$PROJECT_DIR$/Exercises/week1/day4/day4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercises/week1/day5/day5.iml" filepath="$PROJECT_DIR$/Exercises/week1/day5/day5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercises/week2/week2.iml" filepath="$PROJECT_DIR$/Exercises/week2/week2.iml" />
+    </modules>
+  </component>
+</project>
