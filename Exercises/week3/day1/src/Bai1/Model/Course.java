@@ -1,6 +1,6 @@
-package Bai1;
+package Bai1.Model;
 
-abstract class Course {
+public abstract class Course {
     // Init variables
     private int courseId;
     private String courseName;
@@ -46,5 +46,10 @@ abstract class Course {
 
     public void setCredit(int credit) {
         this.credit = credit;
+    }
+
+    // Display course in detail
+    public void showCourseInDetail(){
+        System.out.println("Course ID: " + courseId + ", Course name: " + courseName + ", Mentor Name: " + mentorName + ", Credit: " + credit);
     }
 }
