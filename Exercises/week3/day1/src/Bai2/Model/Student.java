@@ -1,54 +1,36 @@
-package Bai2;
+package Bai2.Model;
 
 import java.time.LocalDate;
 
-public class Student {
+public class Student extends People {
     // Init variables
-    private int studentId;
-    private String name;
-    private LocalDate dateOfBirth;
-    private int ID;
+    private String studentId;
+    private boolean status;
 
     // Constructor
-    public Student(int studentId, String name, int age, LocalDate dateOfBirth, int ID) {
-        this.studentId = studentId;
-        this.name = name;
-        this.dateOfBirth = dateOfBirth;
-        this.ID = ID;
+    public Student(String name, LocalDate dateOfBirth, int ID) {
+        super(name, ID, dateOfBirth);
+        this.status = false;
     }
 
-    public Student() {}
-
     // Getters and Setters
-    public int getStudentId() {
+    public String getStudentId() {
         return studentId;
     }
 
-    public void setStudentId(int studentId) {
+    public void setStudentId(String studentId) {
         this.studentId = studentId;
     }
 
-    public String getName() {
-        return name;
+    public boolean getStatus() {
+        return status;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setStatus(boolean status) {
+        this.status = status;
     }
 
-    public int getID() {
-        return ID;
-    }
-
-    public void setID(int ID) {
-        this.ID = ID;
-    }
-
-    public LocalDate getDateOfBirth() {
-        return dateOfBirth;
-    }
-
-    public void setDateOfBirth(LocalDate dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
+    public void show() {
+        System.out.println("Student ID: " + studentId + ", Student Name: " + getName() + ", Student day of birth: " + getDateofBirth() + ", ID: " + getID() + ", Student status: " + status);
     }
 }
