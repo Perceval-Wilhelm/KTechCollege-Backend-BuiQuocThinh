@@ -1,12 +1,16 @@
 package Bai2.Model;
 
+import Bai2.Services.ClassRoomInterface;
+import Bai2.Services.StudentInterface;
+import Bai2.Services.TeacherInterface;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class University {
+public class University implements StudentInterface, ClassRoomInterface, TeacherInterface {
     // Init variables
     public static Scanner sc = new Scanner(System.in);
     private ArrayList<ClassRoom> classRooms;
