@@ -6,5 +6,7 @@ public interface BaseInterface {
 
 //    String sayHello(String name);
 
-    int calculator (int x, int y);
+//    int calculator(int x, int y);
+
+    void info(String name, int age);
 }

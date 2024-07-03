@@ -1,4 +1,5 @@
 package vn.edu.likelion.day13.lambda;
 
-public class Calculatỏ {
+public interface Calculator {
+    int timXY(int x, int y);
 }
