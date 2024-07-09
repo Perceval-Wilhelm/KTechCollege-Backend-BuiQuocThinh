@@ -1,73 +1,58 @@
 package vn.edu.likelion.day15;
 
 import java.util.Optional;
-import java.util.function.Function;
 
 public class Application {
     public static void main(String[] args) {
-        // Create 1 empty optional object
-        Optional<String> opt1 = Optional.empty();
+        // tạo ra 1 đối tượng optional rỗng
+        Optional<String> opt = Optional.empty();
 
-        // Create a non-null object (can contain value or empty)
-        String str = "";
+        // tạo ra 1 đối tượng non-null (có thể có giá trị hoặc empty)
+        String str = "Hello KTC";
         Optional<String> opt2 = Optional.of(str);
         System.out.println(opt2.isPresent());
         if (opt2.isPresent()) {
             System.out.println(str);
-        }
-        else {
-            System.out.println("No value");
-        }
-
-        opt2.ifPresent(System.out::println);
-
-        if (str==null) {
-
+        } else {
+            System.out.println("ko co gia trị");
         }
 
+        if (str == null) {
+            //todo
+        }
+
+        // Giả dụ đây là thư viện StringUtils của Apache common
         if (StringUtils.isNullOrEmpty(str)) {
-
+            //todo
         }
 
-        // Create an object allow null or non-null
+        // tạo ra 1 đối tượng cho phép null hoặc non-null
         String str2 = null;
         Optional<String> opt3 = Optional.ofNullable(str2);
-//        System.out.println(opt3.isPresent());
 
-        // Check whether person object is null or not
-        Person per = new Person("Thinh");
+        // Kiểm tra đối tượng Person có null hay ko
+        Person per = new Person("Tấn");
         Optional<Person> optional = Optional.ofNullable(per);
 
-        // Check if Person object is null or not, present then print
+        // kiểm tra đối tượng Persion có giá trị hay ko, ko thì hiển thị
         optional.ifPresent(System.out::println);
 
         Optional<String> opt4 = optional.map(Person::getName);
-        System.out.println(opt4.get());
-
-        // Check String obejct (here is the name of Person) has value or not
+        System.out.print("Tên của class Person là: ");
+        // Kiểm tra đối tượng String (ở đây là name của Person) có giá trị hay ko
         opt4.ifPresent(System.out::println);
 
-        // Create an empty Optional object
+        // tạo 1 đối tượng Optional emtpy
         Optional<Person> perEmpty = Optional.empty();
         System.out.println("Dân hỏi - IDE trả lời: " + perEmpty);
         Optional<String> test = perEmpty.map(Person::getName);
-        System.out.println("Test truong hop Optional<Person> la empty: ");
+        //System.out.print("Test trường hợp Otional<Person> là empty: ");
         test.ifPresent(System.out::println);
 
-        // Create another empty Optional
-        String vinh = "Vinh";
+        // tạo 1 đối tượng Optional empty khác
         Optional<String> vinhHoi = Optional.empty();
         System.out.println("\nVinh hỏi - IDE trả lời: " + vinhHoi);
 
-        // Not lambda
-        Function<String, Integer> tan = new Function<String, Integer>() {
-            public Integer apply(String s) {
-                return Integer.parseInt(s);
-            }
-        };
-        // lambda
-        Function<String, Integer> tan2 = s -> Integer.parseInt(s);
-        // method reference
-        Function<String, Integer> tan3 = Integer::parseInt;
+
     }
 }

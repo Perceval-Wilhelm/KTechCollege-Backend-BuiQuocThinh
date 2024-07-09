@@ -7,7 +7,7 @@ public class Account {
         this.amount = amount;
     }
 
-    public synchronized void deposit(double amount) throws InterruptedException {
+    public synchronized void withdraw(double amount) throws InterruptedException {
         if (this.amount >= amount) {
             Thread.sleep(1000);
             this.amount -= amount;
