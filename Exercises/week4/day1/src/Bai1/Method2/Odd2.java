@@ -1,4 +1,4 @@
-package Bai1;
+package Bai1.Method2;
 
 public class Odd2 implements Runnable {
     private int num;
@@ -12,9 +12,7 @@ public class Odd2 implements Runnable {
         for (int i = 1; i <= num; i++) {
             try {
                 Thread.sleep(500);
-                if (i % 2 != 0) {
-                    System.out.println("Odd Number from oddThread: " + i);
-                }
+                if (i % 2 != 0) System.out.println("Odd Number from oddThread: " + i);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }

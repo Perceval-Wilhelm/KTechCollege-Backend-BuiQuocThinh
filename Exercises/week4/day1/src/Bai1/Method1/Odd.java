@@ -1,4 +1,4 @@
-package Bai1;
+package Bai1.Method1;
 
 public class Odd extends Thread{
     private int x;
@@ -12,9 +12,7 @@ public class Odd extends Thread{
         for (int i = 1; i <= x; i++) {
             try {
                 Thread.sleep(500);
-                if (i % 2 == 0) {
-                    System.out.println("Even Number from evenThread: " + i);
-                }
+                if (i % 2 == 0) System.out.println("Even Number from evenThread: " + i);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
