@@ -1,4 +1,4 @@
-package vn.edu.likelion.OfficeDemo;
+package vn.edu.likelion.OfficeDemo.Word;
 
 import org.apache.poi.xwpf.usermodel.XWPFDocument;
 import org.apache.poi.xwpf.usermodel.XWPFParagraph;
@@ -27,6 +27,8 @@ public class WriteWordExample {
             document.write(fos);
 
             System.out.println("Đã tạo file docx thành công");
+
+            fos.close();
         } catch (IOException io) {
             io.printStackTrace();
         }

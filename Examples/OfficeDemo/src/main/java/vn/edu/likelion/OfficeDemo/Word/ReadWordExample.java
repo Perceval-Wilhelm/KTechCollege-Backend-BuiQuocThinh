@@ -1,4 +1,4 @@
-package vn.edu.likelion.OfficeDemo;
+package vn.edu.likelion.OfficeDemo.Word;
 
 import org.apache.poi.xwpf.usermodel.XWPFDocument;
 import org.apache.poi.xwpf.usermodel.XWPFParagraph;
@@ -17,6 +17,9 @@ public class ReadWordExample {
             for (XWPFParagraph paragraph : document.getParagraphs()) {
                 System.out.println(paragraph.getText());
             }
+
+            document.close();
+            input.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
