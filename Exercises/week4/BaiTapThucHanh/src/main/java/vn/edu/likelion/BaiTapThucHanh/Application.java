@@ -1,5 +1,6 @@
 package vn.edu.likelion.BaiTapThucHanh;
 
+import java.util.Arrays;
 import java.util.Base64;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -197,6 +198,7 @@ public class Application {
             for (XWPFParagraph paragraph : document.getParagraphs()) {
                 String paragraphText = paragraph.getText();
                 String[] parts = paragraphText.split("\t");
+                System.out.println(Arrays.toString(parts));
                 for (String part : parts) {
                     if (base64Pattern.matcher(part).matches()) {
                         System.out.print(STR."\{decodeBase64(part)}\t");
